@@ -25,7 +25,7 @@ while True:
 
     # Convertendo a mensagem para maiúsculas
     capitalizedSentence = sentence.upper()
-
+    print(f"Mensagem recebida de {addr}: {capitalizedSentence}")
     # Enviando a mensagem de volta ao cliente
     connectionSocket.send(capitalizedSentence.encode())
 

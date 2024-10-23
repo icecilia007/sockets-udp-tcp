@@ -24,16 +24,16 @@ Após conectar, você pode digitar a mensagem que será enviada ao servidor TCP.
 Substitua o servidor Python por um servidor UDP usando `netcat`:
 
 ```bash
-nc -u -l 12000
+nc -u -l -p 12000
 ```
 
-Isso cria um servidor UDP escutando na porta 12000. Agora, você pode enviar mensagens com o cliente UDP.
+Isso cria um servidor UDP escutando na porta 12000. Agora, você pode enviar mensagens com o cliente UDP. O -p é utilizado para informar ao netcat tradicional qual porta você estará utilizando. -u para informar que será uma conexão udp e -l para notificar que você irá criar um listen.
 
 #### **Servidor TCP com `netcat`**
 Para TCP:
 
 ```bash
-nc -l 12000
+nc -l -p 2000
 ```
 
 Isso cria um servidor TCP escutando na porta 12000. Agora, qualquer cliente TCP pode se conectar e enviar mensagens.

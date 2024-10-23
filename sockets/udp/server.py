@@ -16,7 +16,8 @@ print("The server is ready to receive")
 while True:
     # Recebendo a mensagem do cliente e o endereço do cliente (IP e porta)
     message, clientAddress = serverSocket.recvfrom(2048)
-
+    print(f"Mensagem recebida de {clientAddress}: {message.decode()}")
+    
     # Convertendo a mensagem para maiúsculas
     modifiedMessage = message.decode().upper()
 
