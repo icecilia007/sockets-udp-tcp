@@ -19,6 +19,11 @@
 - `print('From Server:', modifiedSentence.decode())`: Exibe a mensagem recebida do servidor (que agora está em maiúsculas), convertendo os bytes de volta para string com `decode()`.
 - `clientSocket.close()`: Fecha o socket e encerra a conexão com o servidor.
 
+### Comprovacao da Execucao
+![Comprovacao da Execucao](comprovacao-de-funcionamento.PNG)
+### Comprovacao da Execucao: Caso servidor não exista
+![Comprovacao da Execucao](comprovacao-servidor-inativo.PNG)
+
 ### Questão 3: Utilizando netstat para Verificar Conexões
 Execute o Servidor TCP e, em seguida, o Cliente TCP.
 
@@ -26,3 +31,6 @@ Em uma terceira janela, rode o seguinte comando para verificar a conexão estabe
 
 `netstat -an | grep 12000`
 Isso irá mostrar todas as conexões na porta 12000, confirmando que o cliente e o servidor estão conectados.
+
+### Comprovacao da execucao com Cliente NC
+![Comprovacao da Execucao](comprovacao-cliente-nc.PNG)

@@ -19,6 +19,11 @@
 - `print(modifiedMessage.decode())`: Exibe a mensagem convertida para maiúsculas.
 - `clientSocket.close()`: Fecha o socket após a comunicação.
 
+### Comprovacao da Execucao
+![Comprovacao da Execucao](comprovacao-de-fucionamento.PNG)
+### Comprovacao da Execucao: Caso servidor não exista
+![Comprovacao da Execucao](comprovacao-servidor-inativo.PNG)
+
 ### Questão 3: Utilizando netstat para Verificar Conexões
 Execute o Servidor UDP e, em seguida, o Cliente UDP.
 
@@ -26,3 +31,4 @@ Em uma terceira janela, rode o seguinte comando para verificar a conexão estabe
 
 `netstat -an | grep 12000`
 Isso irá mostrar todas as conexões na porta 12000, confirmando que o cliente e o servidor estão conectados.
+![Comprovacao da Execucao](comprovacao-cliente-nc.PNG)
